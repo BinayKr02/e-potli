@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Console</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://user-images.githubusercontent.com/52379890/133371696-2488b42d-62fa-4210-b49f-9ebfea97fcd0.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+
+<section>
+	<div class="left-sidebar">
+	
+		<br><br><br>
+		<span class="plus">+</span>
+		<i class="fa fa-th-large" style="margin-top: 50px;"></i>
+		<i class="fa fa-align-right"></i>
+		<i class="fa fa-reorder"></i>
+		<i class="fa fa-line-chart"></i>
+
+
+		<div class="bottom">
+			<i class="fa fa-bell-o"></i>
+		</div>
+	</div>
+
+	<div class="main">
+			<a href="#" style="text-decoration: none;"><i class="fa fa-reorder menu-icon"></i></a>
+			<i class="fa fa-long-arrow-left arrow1"></i>
+			<i class="fa fa-long-arrow-right arrow1"></i>
+			
+           
+            <a href="/investmentWithdrawl"><button class="fin-btn">Investment Withdraw</button></a>
+            <a href="/withdrawl"><button class="fin-btn">Withdraw</button></a>
+            <a href="/transfer"><button class="fin-btn">Transfer Money</button></a>
+            <a href="/invest"><button class="fin-btn">Invest</button></a>
+           <a href="/deposit"><button class="fin-btn">Deposit</button></a> 
+
+			<div class="clearfix"></div>
+			<p class="p-1" >Hi, <%= fname %> <strong><span style="color: black;">Wallet Id: <%=id %></span></strong></p>
+
+			<div class="box" style="margin-left: 0px;">
+				<div class="content">
+					<i class="fa fa-money icons"></i>
+					<p>Balance</p>
+					<span>₹ <%=balance %></span>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="content">
+					<i class="fa fa-bar-chart icons"></i>
+					<p>Investments</p>
+					<span id="investment">₹ <%=investment%></span>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="content">
+					<i class="fa fa-pie-chart icons"></i>
+					<p>Current Value</p>
+					<span>₹ <%=currentInvestment%></span>
+				</div>
+			</div>
+
+
+				<div class="clearfix"></div>
+				<br>
+				<div>
+					<p class="p-1">Investment Analysis Returns <span>Autoupdated at 24 hrs and T-9 days oversight</span></p>
+					<br>
+					<svg id="line" width="96%" class="chart-svg"></svg>
+				</div>
+
+
+	</div>
+
+	<div class="right-sidebar">
+	<p class="p-1">Transactions<a href="/signout"><span style="float: right; color: black">Sign Out</span></a></p>
+		<br>
+		<% for(let i=0; i<all_transaction.length; i++) { %>
+			<% if(id==all_transaction[i].to) { %>
+		<div class="nub-sec">
+			<p class="p2">R</p><p class="head">₹ <%=all_transaction[i].amount %> <br><span>From: <strong><%=all_transaction[i].from %></strong></span></p>
+			<i class="fa fa-ellipsis-h dots"></i>
+		</div>
+		<% } else{%>
+        
+		<div class="nub-sec">
+			<p class="p2" style="background: #f5d1d1; color: #957272;">S</p><p class="head">₹ <%=all_transaction[i].amount%> <br><span>To:  <strong><%=all_transaction[i].to %></strong></span></p>
+			<i class="fa fa-ellipsis-h dots"></i>
+		</div>
+		<%}  %>
+
+
+		
+  <%}%>
+		
+
+
+	</div>
+</section>
+
+
+
+<script src="chart.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".fa-long-arrow-left").click(function(){
+			$(".left-sidebar").hide(500);
+			$(".main").css('max-width','72.5%');
+			$(".box").css('width','181px');
+		});
+
+		$(".fa-long-arrow-right").click(function(){
+			$(".left-sidebar").show(500);
+			$(".main").css('max-width','63.6%');
+			$(".box").css('width','159px');
+		});
+
+		$(".menu-icon").click(function(){
+			$(".left-sidebar").slideToggle();
+			$(".main").css('max-width','75%');
+		});
+	});
+    
+</script>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="icon" href="https://user-images.githubusercontent.com/52379890/133371696-2488b42d-62fa-4210-b49f-9ebfea97fcd0.png">
+    <title>E-Potli</title>
+
+    <style>
+       .carousel-item img{
+           width: 100%;
+           height: 500px;
+       }
+       .carousel-caption{
+           margin-bottom: 100px;
+       }
+       
+       .col{
+           margin-top: 30px;
+           margin-bottom: 30px;
+           text-align: center;
+           width: 300px;
+       }
+       .row-1{
+           margin-top: 80px;
+           margin-bottom: 100px;
+       }
+       .featurette {
+           display: -ms-flexbox;
+           display: -webkit-box;
+           display: flex;
+           -ms-flex-align: center;
+           -ms-flex-pack: center;
+           -webkit-box-align: center;
+           align-items: center;
+           -webkit-box-pack: center;
+           justify-content: center;
+           padding-top: 50px;
+           padding-bottom: 50px;
+       }
+       footer{
+           padding-top: 30px;
+           padding-bottom: 50px;
+       }
+    </style>
+
+</head>
+<body>
+
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       <a class="navbar-brand" href="#" style="margin-right: 10px;"><strong>E-Potli</strong></a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+     
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav mr-auto">
+           <li class="nav-item active">
+             <a class="nav-link" href="/"  style="margin-right: 10px;">Home <span class="sr-only">(current)</span></a>
+           </li>
+           <li class="nav-item active">
+            <a class="nav-link" href="/login"  style="margin-right: 10px;">Console <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/sign-up"  style="margin-right: 10px;">Create a Wallet <span class="sr-only">(current)</span></a>
+          </li>
+          
+         </ul>
+         <form class="form-inline my-2 my-lg-0">
+           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+         </form>
+       </div>
+   </nav>
+
+
+   <div id="carousel-region">
+       <div id="myCarousel" class="carousel slide" data-ride="carousel" style="user-select: auto;">
+           <ol class="carousel-indicators" style="user-select: auto;">
+           <li data-target="#myCarousel" data-slide-to="0" class="active" style="user-select: auto;"></li>
+           <li data-target="#myCarousel" data-slide-to="1" class="" style="user-select: auto;"></li>
+           <li data-target="#myCarousel" data-slide-to="2" class="" style="user-select: auto;"></li>
+           </ol>
+
+           <div class="carousel-inner" style="user-select: auto;">
+               <div class="carousel-item active" style="user-select: auto;">
+                 <img class="first-slide" src="https://www.pngmagic.com/product_images/3d-abstract-background-orange.jpg" alt="First slide" style="user-select: auto;">
+                 <div class="container" style="user-select: auto;">
+                   <div class="carousel-caption text-left" style="user-select: auto;">
+                     <h1 style="user-select: auto;">Be a Smart Investor</h1>
+                     <p style="user-select: auto;">Start investing early, grow early, shine early !</p>
+                     <p style="user-select: auto;"><a class="btn btn-lg btn-primary" href="/sign-up" role="button" style="user-select: auto;">Sign up today</a></p>
+                   </div>
+                 </div>
+               </div>
+               <div class="carousel-item" style="user-select: auto;">
+                 <img class="second-slide" src="https://www.pngmagic.com/product_images/3d-abstract-background-orange.jpg" alt="Second slide" style="user-select: auto;">
+                 <div class="container" style="user-select: auto;">
+                   <div class="carousel-caption" style="user-select: auto;">
+                     <h1 style="user-select: auto;">Pay and Earn Reward</h1>
+                     <p style="user-select: auto;">With every transaction you will be getting some part of the transaction as Cashback and Digital Tokens !</p>
+                     <p style="user-select: auto;"><a class="btn btn-lg btn-primary" href="https://en.wikipedia.org/wiki/Cashback" role="button" style="user-select: auto;">Learn more</a></p>
+                   </div>
+                 </div>
+               </div>
+               <div class="carousel-item" style="user-select: auto;">
+                 <img class="third-slide" src="https://www.pngmagic.com/product_images/3d-abstract-background-orange.jpg" alt="Third slide" style="user-select: auto;">
+                 <div class="container" style="user-select: auto;">
+                   <div class="carousel-caption text-right" style="user-select: auto;">
+                     <h1 style="user-select: auto;">More promising returns than Mutual Funds ! </h1>
+                     <p style="user-select: auto;"> We use AI and Machine Learning tools for an exponential returns of your Investment ! </p>
+                     <p style="user-select: auto;"><a class="btn btn-lg btn-primary" href="/login" role="button" style="user-select: auto;">Login</a></p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+
+             <!--
+           <div class="carousel-inner" role="listbox" style=" height: 500px !important;">
+           <div class="carousel-item active" style="user-select: auto;">
+               <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide" alt="First slide" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17beacca899%20text%20%7B%20fill%3A%23555%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17beacca899%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22285.921875%22%20y%3D%22217.7609375%22%3EFirst%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="user-select: auto;">
+           </div>
+           <div class="carousel-item" style="user-select: auto;">
+               <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&amp;bg=666&amp;fg=444&amp;text=Second slide" alt="Second slide" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17beacca89b%20text%20%7B%20fill%3A%23444%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17beacca89b%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23666%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22247.3125%22%20y%3D%22217.7609375%22%3ESecond%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="user-select: auto;">
+           </div>
+           <div class="carousel-item" style="user-select: auto;">
+               <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&amp;bg=555&amp;fg=333&amp;text=Third slide" alt="Third slide" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17beacca89c%20text%20%7B%20fill%3A%23333%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17beacca89c%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23555%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22277%22%20y%3D%22217.7609375%22%3EThird%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="user-select: auto;">
+           </div>
+           </div>-->
+           <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev" style="user-select: auto;">
+           <span class="carousel-control-prev-icon" aria-hidden="true" style="user-select: auto;"></span>
+           <span class="sr-only" style="user-select: auto;">Previous</span>
+           </a>
+           <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next" style="user-select: auto;">
+           <span class="carousel-control-next-icon" aria-hidden="true" style="user-select: auto;"></span>
+           <span class="sr-only" style="user-select: auto;">Next</span>
+           </a>
+       </div>
+   </div>
+
+
+   <div class="features-region">
+       <div class="container marketing" style="user-select: auto;">
+
+           <!-- Three columns of text below the carousel -->
+           <div class="row row-1" style="user-select: auto;">
+             <div class="col col-lg-4 col-12" style="user-select: auto;">
+               <img class="rounded-circle" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/BTC_Logo.svg/1200px-BTC_Logo.svg.png" alt="Generic placeholder image" width="140" height="140" style="user-select: auto;">
+               <h2 style="user-select: auto;">Bitcoin</h2>
+               <p style="user-select: auto;">Bitcoin is a decentralized digital currency, without a central bank or single administrator, that can be sent from user to user on the peer-to-peer bitcoin network without the need for intermediaries. </p>
+               <p style="user-select: auto;"><a class="btn btn-secondary" href="https://bitcoin.org/en/" role="button" style="user-select: auto;">View details »</a></p>
+             </div><!-- /.col-lg-4 -->
+             <div class="col col-lg-4 col-12" style="user-select: auto;">
+               <img class="rounded-circle" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ethereum_logo_2014.svg/1257px-Ethereum_logo_2014.svg.png" alt="Generic placeholder image" width="140" height="140" style="user-select: auto;">
+               <h2 style="user-select: auto;">Ethereum</h2>
+               <p style="user-select: auto;">Ethereum is a decentralized, open-source blockchain with smart contract functionality. Ether is the native cryptocurrency of the platform. Amongst cryptocurrencies, it is second only to Bitcoin in market capitalization.</p>
+               <p style="user-select: auto;"><a class="btn btn-secondary" href="https://en.wikipedia.org/wiki/Ethereum" role="button" style="user-select: auto;">View details »</a></p>
+             </div><!-- /.col-lg-4 -->
+             <div class="col col-lg-4 col-12" style="user-select: auto;">
+               <img class="rounded-circle" src="https://cryptologos.cc/logos/cardano-ada-logo.png" alt="Generic placeholder image" width="140" height="140" style="user-select: auto;">
+               <h2 style="user-select: auto;">Cardano</h2>
+               <p style="user-select: auto;">Cardano is a public blockchain platform. It is open-source and decentralized, with consensus achieved using proof of stake. It can facilitate peer-to-peer transactions with its internal cryptocurrency, Ada.</p>
+               <p style="user-select: auto;"><a class="btn btn-secondary" href="https://cardano.org/" role="button" style="user-select: auto;">View details »</a></p>
+             </div><!-- /.col-lg-4 -->
+           </div><!-- /.row -->
+   
+   
+           <!-- START THE FEATURETTES -->
+   
+           <hr class="featurette-divider" style="user-select: auto;">
+   
+           <div class="row featurette" style="user-select: auto;">
+             <div class="col-md-7" style="user-select: auto;">
+               <h2 class="featurette-heading" style="user-select: auto;">Because We Care <span class="text-muted" style="user-select: auto;">About Every Penny</span></h2>
+               <p class="lead" style="user-select: auto;">E-Potli has a strong support of Artificial Intelligence and Machine Learning tools to reduce the risk factors involved in your investment.</p>
+             </div>
+             <div class="col-md-5" style="user-select: auto;">
+               <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px; user-select: auto;" src="https://freedesignfile.com/upload/2019/08/Make-money-cartoon-vector.jpg" data-holder-rendered="true">
+             </div>
+           </div>
+   
+           <hr class="featurette-divider" style="user-select: auto;">
+   
+           <div class="row featurette" style="user-select: auto;">
+             <div class="col-md-7 order-md-2" style="user-select: auto;">
+               <h2 class="featurette-heading" style="user-select: auto;">Easy tranfers  <span class="text-muted" style="user-select: auto;">Just a click Away</span></h2>
+               <p class="lead" style="user-select: auto;">Using E-Potli, you can just send, receive money in just few clicks !</p>
+             </div>
+             <div class="col-md-5 order-md-1" style="user-select: auto;">
+               <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="http://cdn.shopify.com/s/files/1/0883/2488/products/Juggling_Money_a_grande.png?v=1454430631" data-holder-rendered="true" style="width: 500px; height: 500px; user-select: auto;">
+             </div>
+           </div>
+   
+           <hr class="featurette-divider" style="user-select: auto;">
+   
+           <div class="row featurette" style="user-select: auto;">
+             <div class="col-md-7" style="user-select: auto;">
+               <h2 class="featurette-heading" style="user-select: auto;">Your assets are secure in Cloud ! <span class="text-muted" style="user-select: auto;">Checkmate.</span></h2>
+               <p class="lead" style="user-select: auto;">E-Potli uses blockchain technology to verify each transaction, so there's zero chance of tampering or manupulation of your digital asset.</p>
+             </div>
+             <div class="col-md-5" style="user-select: auto;">
+               <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="https://i.gifer.com/xv.gif" data-holder-rendered="true" style="width: 500px; height: 500px; user-select: auto;">
+             </div>
+           </div>
+   
+           <hr class="featurette-divider" style="user-select: auto;">
+   
+         
+         </div>
+   </div>
+       
+
+   <footer class="container" style="user-select: auto;">
+       <p class="float-right" style="user-select: auto;"><a href="#" style="user-select: auto;">Back to top</a></p>
+       <p style="user-select: auto;">© 2021 E-Potli, Inc. </p>
+     </footer>
+
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+</body>
+</html>
