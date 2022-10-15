@@ -1,0 +1,25 @@
+GET http://localhost:3000/
+
+###
+POST https://ewallet-server.herokuapp.com/createWallet
+content-type: application/json
+
+{
+    "fname": "Ayush",
+    "lname": "Addhyan",
+    "email": "kryptonites.ju@gmail.com",
+    "password": "AyushAddhyan",
+    "phone": "9801254033" 
+}
+
+###
+POST http://localhost:3000/createWallet
+content-type: application/json
+
+{
+    "fname": "Ayush",
+    "lname": "Addhyan",
+    "email": "kryptonites.ju@gmail.com",
+    "password": "AyushAddhyan",
+    "phone": "9801254033" 
+}
