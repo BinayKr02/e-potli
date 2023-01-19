@@ -2,7 +2,7 @@
 
 # E-POTLI
 
-### Live Example :- https://e-potli.herokuapp.com/
+### Live Example :- https://e-potli.onrender.com/
 
 ## Deployment
 
@@ -18,7 +18,7 @@ __Command To Run Application :__ npm start
 
 ## Base URL
 
-https://epotli-wallet.herokuapp.com/
+https://e-potli.onrender.com/
     
     
 # API Documentation
@@ -81,7 +81,7 @@ The REST API to E-POTLI is described below :
 
 **URL :** https://ewallet-server.herokuapp.com/login
 
-__URL     :__   https://epotli-wallet.herokuapp.com/login
+__URL     :__   https://e-potli.onrender.com/login
 
      {
         "email":"kryptonites.ju@gmail.com",
@@ -115,11 +115,11 @@ __Action  :__   Logout
 
 __Method  :__   GET
 
-__URL     :__   https://epotli-wallet.herokuapp.com/signout
+__URL     :__   https://e-potli.onrender.com/signout
 
 **Method :** GET
 
-**URL :** https://ewallet-server.herokuapp.com/signout
+**URL :** https://e-potli.onrender.com/signout
 
 > **_NOTE :_** **Request with the jwt token as cookies and in response the server will clear the cookie “jwt”**
 
@@ -131,7 +131,7 @@ __URL     :__   https://epotli-wallet.herokuapp.com/signout
 
 **Method :** GET
 
-__URL     :__   https://epotli-wallet.herokuapp.com/getInfo
+__URL     :__   https://e-potli.onrender.com/getInfo
   
 
 ### Response
@@ -172,7 +172,7 @@ __URL     :__   https://epotli-wallet.herokuapp.com/getInfo
 
 **Method :** GET
 
-__URL       :__     https://epotli-wallet.herokuapp.com/prices 
+__URL       :__     https://e-potli.onrender.com/prices 
     
 
 ### Response

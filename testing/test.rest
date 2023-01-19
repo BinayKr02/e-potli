@@ -1,7 +1,7 @@
 GET http://localhost:3000/
 
 ###
-POST https://ewallet-server.herokuapp.com/createWallet
+POST https://e-potli.onrender.com/createWallet
 content-type: application/json
 
 {
