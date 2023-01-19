@@ -79,8 +79,6 @@ The REST API to E-POTLI is described below :
 
 **Method :** POST
 
-**URL :** [https://e-potli.onrender.com/login](https://e-potli.onrender.com/login)
-
 __URL     :__   https://e-potli.onrender.com/login
 
      {
