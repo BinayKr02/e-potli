@@ -140,10 +140,10 @@ __URL     :__   https://e-potli.onrender.com/getInfo
     
   
     {
-     "fname": "Ayush",
-     "lname": "Addhyan",
-     "email": "kayush479@gmail.com",
-     "phone": "9801254033",
+     "fname": "Binay",
+     "lname": "Kumar",
+     "email": "binayrajak167@gmail.com",
+     "phone": "7319299958",
      "balance": 1,
      "investment": 0,
      "currentInvestment": 0,
