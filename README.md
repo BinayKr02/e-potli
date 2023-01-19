@@ -84,8 +84,8 @@ The REST API to E-POTLI is described below :
 __URL     :__   https://e-potli.onrender.com/login
 
      {
-        "email":"kryptonites.ju@gmail.com",
-        "password": "Ayush"
+        "email":"user@gmail.com",
+        "password": "password"
      }
     
 
